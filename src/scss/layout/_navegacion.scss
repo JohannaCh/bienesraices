@@ -1,0 +1,86 @@
+.derecha{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+
+  @include tablet{
+      align-items: flex-end;
+  }
+  .dark-mode-botton{
+      width: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      filter: invert(100%);
+
+      &:hover{
+          cursor: pointer;
+      }
+
+      @include tablet{
+          margin-top: 0rem;
+      }
+  }
+}
+
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    align-items: center;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+
+.navegacion{
+    display: none;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+    }
+
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: block;
+        text-align: center;
+
+        @include tablet{
+            margin-right: 2rem;
+
+            &:last-of-type{
+                margin-right: 0rem;
+            }
+        }
+
+        &:hover{
+            color: $amarillo;
+        }
+    }
+}
+
+
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+    img{
+        width: 5rem;
+
+    }
+}
+
+.mostrar{
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}

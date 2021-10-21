@@ -1,0 +1,39 @@
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: .5rem 0.5rem;
+
+    &.error {
+        color: $rojo;
+    }
+    &.exito {
+        color: $verde;
+    }
+}
+
+table.propiedades{
+    text-align: center;
+    margin-top: 5rem;
+    width: 100%;
+    border-spacing: 0rem;
+
+    thead{
+        background-color: $verde;
+
+        th{
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+
+    .imagen-tabla{
+        width: 15rem;
+        display: inline;
+    }
+}
+
+.imagen-small{
+    width: 20rem;
+}
